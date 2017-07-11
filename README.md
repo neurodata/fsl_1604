@@ -1,2 +1,2 @@
-# fsl_1604
-A repository containing the dockerfile for FSL on Ubuntu 16.04. 
+# mrilab
+A repository containing the dockerfile for a docker container running FSL, AFNI, FlashX, ndmg, and fngs on Ubuntu 16.04. 
