@@ -2,14 +2,11 @@
 # pull from a repo containing a full fngs installation, which includes ndmg
 # and other useful packages prebuilt that do not do well with other things
 
-FROM flashx/flashx
+FROM ubuntu:16.04
 MAINTAINER Eric Bridgeford <ebridge2@jhu.edu>
 
 
 #--------Environment Variables-----------------------------------------------#
-ENV NDMG_URL https://github.com/neurodata/ndmg.git
-ENV ATLASES http://openconnecto.me/mrdata/share/atlases/
-ENV AFNI_URL https://afni.nimh.nih.gov/pub/dist/bin/linux_fedora_21_64/@update.afni.binaries
 ENV LIBXP_URL http://mirrors.kernel.org/ubuntu/pool/main/libx/libxp/libxp6_1.0.2-2_amd64.deb
 ENV CRAN_URL https://cran.rstudio.com/
 ENV NDEB_URL http://neuro.debian.net/lists/xenial.us-ca.full
