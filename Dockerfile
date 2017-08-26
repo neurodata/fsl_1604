@@ -14,7 +14,9 @@ ENV NDEB_URL http://neuro.debian.net/lists/xenial.us-ca.full
 #--------Initial Configuration-----------------------------------------------#
 # download/install basic dependencies, and set up python
 RUN apt-get update
-RUN apt-get install -y zip unzip vim git python-dev curl gsl-bin
+RUN \
+    apt-get install -y zip unzip vim git python-dev curl gsl-bin libglu1-mesa \
+    libgsl-dev wget
 
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
